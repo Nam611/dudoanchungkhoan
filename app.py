@@ -170,20 +170,20 @@ if st.button("Dự đoán"):
         with col1:
             st.metric(
                 label="Giá hiện tại",
-                value=f"${df[price_type].iloc[-1]:,.2f}"
+                value=f"${df[price_type].iloc[-1]:,.2f}"  # Sửa ở đây
             )
         
         with col2:
             st.metric(
                 label="Dự đoán giá cuối cùng",
-                value=f"${predictions[-1][0]:,.2f}",
-                delta=f"{((predictions[-1][0] - df[price_type].iloc[-1])/df[price_type].iloc[-1]*100):,.2f}%"
+                value=f"${predictions[-1][0]:,.2f}",  # Sửa ở đây
+                delta=f"{((predictions[-1][0] - df[price_type].iloc[-1])/df[price_type].iloc[-1]*100):,.2f}%"  # Sửa ở đây
             )
         
         with col3:
             st.metric(
                 label="Giá tối đa dự đoán",
-                value=f"${np.max(predictions):,.2f}"
+                value=f"${np.max(predictions):,.2f}"  # Sửa ở đây
             )
             
     except Exception as e:
