@@ -3,5 +3,5 @@ pandas
 numpy
 scikit-learn
 tensorflow
-plotly
+plotly==6.1.1
 yfinance==0.2.61
