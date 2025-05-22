@@ -4,4 +4,4 @@ numpy
 scikit-learn
 tensorflow
 plotly
-yfinance==0.2.43
+yfinance==0.2.61
